@@ -17,15 +17,15 @@ use Illuminate\Http\Request;
 /**Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/
-Route::get('articles', 'ArticleController@index');
-Route::get('articles/{products}', 'ProducController@show');
-Route::post('articles', 'ProducController@store');
-Route::put('articles/{products}', 'ProducController@update');
-Route::delete('articles/{products}', 'ProducController@delete');
-Route::get('articles', 'CostumersController@index');
-Route::get('articles/{costumers}', 'CostumersController@show');
-Route::post('articles', 'CostumersController@store');
-Route::put('articles/{costumers}', 'CostumersController@update');
-Route::delete('articles/{costumers}', 'CostumersController@delete');
+Route::get('products', 'ProducController@index');
+Route::get('products/{products}', 'ProducController@show');
+Route::post('products', 'ProducController@store');
+Route::put('products/{products}', 'ProducController@update');
+Route::delete('products/{products}', 'ProducController@delete');
+Route::get('costumers', 'CostumersController@index');
+Route::get('costumers/{costumers}', 'CostumersController@show');
+Route::post('costumers', 'CostumersController@store');
+Route::put('costumers/{costumers}', 'CostumersController@update');
+Route::delete('costumers/{costumers}', 'CostumersController@delete');
 
 
